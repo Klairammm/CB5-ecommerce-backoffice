@@ -1,0 +1,21 @@
+// @import "src/constants/variables.scss"; --> problemi
+
+.Container {
+  width: 100vw;
+  height: calc(100vh - 75px);
+  background-color: #43464b;
+  display: flex;
+
+  .columnSx {
+    // border: 2px solid red;
+    width: 500px;
+    height: calc(100vh - 75px);
+    padding: 20px;
+  }
+
+  .columnDx {
+    // border: 2px solid blue;
+    width: 100%;
+    height: calc(100vh - 75px);
+  }
+}
