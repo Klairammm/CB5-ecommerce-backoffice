@@ -1,0 +1,50 @@
+.Header {
+  padding: 36px 18px;
+  height: 50px;
+  width: 100vw;
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 8px black;
+
+  .columnSx {
+    display: flex;
+    align-items: center;
+
+    .logoHeader {
+      height: 10vmin;
+      pointer-events: none;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      .logoHeader {
+        animation: logo-spin infinite 20s linear;
+      }
+    }
+
+    @keyframes logo-spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  .btnSet {
+    background-color: #282c34;
+    border-color: #61dafb;
+    border-radius: 6px;
+    width: 50px;
+    height: 40px;
+    color: whitesmoke;
+    cursor: pointer;
+  }
+
+  .btnSet:hover {
+    background-color: #61dafb;
+    color: #282c34;
+  }
+}
