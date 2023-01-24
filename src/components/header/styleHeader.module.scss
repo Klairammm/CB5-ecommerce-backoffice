@@ -7,6 +7,11 @@
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 0 8px black;
+  @media all and (max-width: 800px) {
+    & {
+      justify-content: center;
+    }
+  }
 
   .columnSx {
     display: flex;
@@ -41,6 +46,11 @@
     height: 40px;
     color: whitesmoke;
     cursor: pointer;
+    @media all and (max-width: 800px) {
+      & {
+        display: none;
+      }
+    }
   }
 
   .btnSet:hover {

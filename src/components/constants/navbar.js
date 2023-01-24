@@ -3,7 +3,7 @@ import {
   GrHomeRounded,
   GrAggregate,
   GrBook,
-  GrSign,
+  GrUser,
 } from "react-icons/gr";
 
 export const navbarLinks = [
@@ -29,7 +29,7 @@ export const navbarLinks = [
     id: 4,
     label: "Users",
     route: "users",
-    icon: <GrSign />,
+    icon: <GrUser />,
   },
   {
     id: 5,

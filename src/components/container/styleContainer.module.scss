@@ -3,7 +3,6 @@
 .Container {
   width: 100vw;
   height: calc(100vh - 75px);
-  background-color: #43464b;
   display: flex;
 
   .columnSx {
@@ -11,11 +10,16 @@
     width: 500px;
     height: calc(100vh - 75px);
     padding: 20px;
+    @media all and (max-width: 800px) {
+      & {
+        width: 200px;
+      }
+    }
   }
 
   .columnDx {
-    // border: 2px solid blue;
     width: 100%;
     height: calc(100vh - 75px);
+    padding: 20px 5px;
   }
 }
