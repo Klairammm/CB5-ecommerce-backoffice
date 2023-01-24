@@ -2,11 +2,17 @@ import styles from "./styleNavbar.module.scss";
 import { navbarLinks } from "../constants/navbar";
 import LiComponents from "../liComponents/LiComponents";
 
-const Navbar = () => {
+const Navbar = ({ setRoute }) => {
   return (
     <ul className={styles.Navbar}>
       {navbarLinks.map((item, index) => (
-        <LiComponents icon={item.icon} key={item.id} label={item.label} />
+        <LiComponents
+          setRoute={setRoute}
+          routeUrl={item.route}
+          icon={item.icon}
+          key={item.id}
+          label={item.label}
+        />
       ))}
     </ul>
   );
