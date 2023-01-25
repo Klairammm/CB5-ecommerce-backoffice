@@ -4,7 +4,24 @@
   padding: 20px;
   border-radius: 6px;
   background-color: #5e6675;
-  h1 {
-    font-size: 20px;
+  .pageHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      font-size: 20px;
+    }
+    button {
+      padding: 5px;
+      background-color: #5e667500;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      border: none;
+      border-radius: 6px;
+      background-color: whitesmoke;
+    }
   }
 }
