@@ -2,7 +2,7 @@ import styles from "./styleNavbar.module.scss";
 import { navbarLinks } from "../constants/navbar";
 import LiComponents from "../liComponents/LiComponents";
 
-const Navbar = ({ setRoute }) => {
+const Navbar = ({ setRoute, stateRoute }) => {
   return (
     <ul className={styles.Navbar}>
       {navbarLinks.map((item, index) => (
@@ -12,6 +12,7 @@ const Navbar = ({ setRoute }) => {
           icon={item.icon}
           key={item.id}
           label={item.label}
+          stateRoute={stateRoute}
         />
       ))}
     </ul>

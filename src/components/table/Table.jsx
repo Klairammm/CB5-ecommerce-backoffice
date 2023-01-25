@@ -24,8 +24,11 @@ const Table = ({ categoriesState, getData, loading }) => {
               <img src={item.image} alt={item.name} />
               <p className={styles.name}>{item.name.substring(0, 20)}</p>
               <div className={styles.btnSet}>
-                <BtnEdit />
-                <BtnDelete />
+                <BtnEdit
+                  getData={getData}
+                  data={{ name: item.name, image: item.image, id: item.id }}
+                />
+                <BtnDelete getData={getData} id={item.id} />
               </div>
             </div>
           ))}
