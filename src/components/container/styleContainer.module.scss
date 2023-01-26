@@ -12,14 +12,19 @@
     padding: 20px;
     @media all and (max-width: 800px) {
       & {
-        width: 200px;
+        width: 150px;
       }
     }
   }
 
   .columnDx {
-    width: 100%;
+    width: calc(100vw - 510px);
     height: calc(100vh - 75px);
     padding: 20px 5px;
+    @media all and (max-width: 800px) {
+      & {
+        width: 100%;
+      }
+    }
   }
 }
