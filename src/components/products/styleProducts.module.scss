@@ -1,0 +1,19 @@
+.Products {
+  width: 100%;
+  min-height: 300px;
+  padding: 20px;
+  border-radius: 6px;
+  background-color: #5e6675;
+  h1 {
+    color: whitesmoke;
+  }
+  .list {
+    border: 2px solid rgb(41, 222, 242);
+    border-radius: 6px;
+    padding: 10px;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
